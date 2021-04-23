@@ -11,6 +11,9 @@ func init(){
 		arr=append(arr,rand.Int()%100)
 	}
 }
+//测所有文件  go test -v ./
+//测单个文件  go test -v sort_test.go  sort.go
+// 测试单个方法 go test -v -test.run TestBubleSort
 func TestBubleSort(t *testing.T) {
 	fmt.Println(arr)
 	BubleSort(arr)
